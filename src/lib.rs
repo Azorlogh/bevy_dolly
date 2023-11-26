@@ -12,8 +12,12 @@ pub mod prelude {
         dolly::{driver::*, drivers::*, handedness, util},
         dolly_type::*,
         drivers::{follow::*, fpv::*},
+        system::*,
+    };
+
+    #[cfg(feature = "helpers")]
+    pub use crate::{
         helpers::*,
         helpers::{cone::*, cursor_grab::*, pos_ctrl::*},
-        system::*,
     };
 }
